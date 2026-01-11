@@ -21,9 +21,7 @@ ADMIN
 Dashboard : <img width="1920" height="1080" alt="Screenshot 2026-01-11 205858" src="https://github.com/user-attachments/assets/e10bced9-9f41-439f-8cd4-6c3ac9fbbbb1" />
 
 
-Panel Admin : <img width="1920" height="1080" alt="Screenshot 2026-01-11 205907" src="https://github.com/user-attachments/assets/b8fe566b-da2f-4812-a939-a0eddfcc090b" />
+Panel Admin : <img width="1920" height="1080" alt="Panel Admin" src="https://github.com/user-attachments/assets/f3ecd52b-0967-4bcd-81fb-f881959bb02e" />
 
 
 Input Barang : <img width="1920" height="1080" alt="Screenshot 2026-01-11 205914" src="https://github.com/user-attachments/assets/8a6b26d5-082c-4811-8270-54b0d889383b" />
-
-
