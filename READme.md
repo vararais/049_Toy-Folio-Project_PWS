@@ -8,7 +8,7 @@ Login : <img width="1920" height="1080" alt="Screenshot 2026-01-11 205738" src="
 
 USER 
 
-Dashboard dan API key : <img width="1920" height="1080" alt="Screenshot 2026-01-11 213541" src="https://github.com/user-attachments/assets/b8ad90ac-5714-438d-bea5-d27dcc04f908" />
+Dashboard dan API key : <img width="1920" height="1080" alt="Dash Fix" src="https://github.com/user-attachments/assets/ca11e19c-955c-4df2-beab-a3452c708c7e" />
 
 
 API Tester : <img width="1920" height="1080" alt="Screenshot 2026-01-11 205834" src="https://github.com/user-attachments/assets/2609a646-655e-4d23-b7d1-05a063ebbeb7" />
@@ -29,3 +29,4 @@ Input Barang : <img width="1920" height="1080" alt="Screenshot 2026-01-11 205914
 HASIL PERCOBAAN API 
 
 <img width="1920" height="1080" alt="Screenshot 2026-01-11 213418" src="https://github.com/user-attachments/assets/451346b1-57d5-4129-8de8-caecc5962527" />
+
