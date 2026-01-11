@@ -1,0 +1,35 @@
+@startuml
+!theme plain
+title High-Level Architecture - ToyFolio
+
+node "Client Side (Frontend)" {
+    component [React App (Vite)] as Client
+}
+
+node "Server Side (Backend)" {
+    component [Node.js Express Server] as Server
+    component [Auth Middleware] as Auth
+    component [Catalog Logic] as Logic
+}
+
+database "Data Storage" {
+    database "MySQL Database" as DB
+}
+
+Client <--> Server : JSON / HTTP REST
+Server --> Auth : 1. Validate Token/Key
+Auth --> Logic : 2. Process Request
+Logic <--> DB : 3. Read/Write Data
+
+note right of Client
+  User Dashboard
+  Admin Panel
+  API Playground
+end note
+
+note right of Server
+  Port: 3000
+  Rest API Endpoints
+end note
+
+@enduml

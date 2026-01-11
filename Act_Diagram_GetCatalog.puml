@@ -1,0 +1,37 @@
+@startuml
+title Activity Diagram: Get Catalog Data (API Request)
+
+|User (Client)|
+start
+:Buka API Playground;
+:Input API Key;
+:Klik "Test GET Catalog";
+:Kirim Request GET /api/catalog;
+
+|Backend Server|
+:Terima Request;
+:Validasi Header 'x-api-key';
+
+if (API Key Valid?) then (Ya)
+    :Cek Sisa Kuota (Credits);
+    if (Credits > 0?) then (Ya)
+        :Query Data Katalog ke DB;
+        |Database|
+        :SELECT * FROM tbl_items;
+        |Backend Server|
+        :Update Kuota User (-1);
+        |Database|
+        :UPDATE tbl_user SET credits = credits - 1;
+        |Backend Server|
+        :Kirim Response JSON (200 OK);
+    else (Tidak)
+        :Return Error 403 (Quota Exceeded);
+    endif
+else (Tidak)
+    :Return Error 403 (Invalid Key);
+endif
+
+|User (Client)|
+:Tampilkan Hasil JSON / Error;
+stop
+@enduml

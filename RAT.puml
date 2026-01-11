@@ -1,0 +1,28 @@
+@startuml
+hide circle
+skinparam classAttributeIconSize 0
+
+class "User (Pengguna)" as User {
+    -user_id : INT
+    -nama_lengkap : VARCHAR
+    -email : VARCHAR
+    -password : VARCHAR
+    -role : ENUM('admin', 'user')
+    -api_key : VARCHAR
+    -credits : INT
+}
+
+class "Item (Barang Koleksi)" as Item {
+    -item_id : INT
+    -item_name : VARCHAR
+    -estimated_value : INT
+    -production_year : INT
+    -condition_grade : VARCHAR
+    -description : TEXT
+    -image_path : VARCHAR
+}
+
+note bottom of User : Menyimpan data autentikasi \ndan kuota API Key
+note bottom of Item : Menyimpan data katalog \nHotWheels yang dijual datanya
+
+@enduml

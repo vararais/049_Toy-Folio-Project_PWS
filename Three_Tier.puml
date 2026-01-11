@@ -1,0 +1,31 @@
+@startuml
+package "Presentation Tier (Frontend)" {
+    [React.js App (Vite)]
+    note right: Login UI, Dashboard, \nAdmin Panel, API Docs
+}
+
+package "Application Tier (Backend)" {
+    [Node.js + Express]
+    
+    folder "Modules" {
+        [Auth Controller]
+        [Catalog Controller]
+        [Admin Controller]
+    }
+    
+    folder "Middleware" {
+        [JWT Validation]
+        [API Key Check]
+        [Quota Manager]
+    }
+}
+
+package "Data Tier (Database)" {
+    [MySQL Database]
+    note right: tbl_user, tbl_items
+}
+
+[React.js App (Vite)] <--> [Node.js + Express] : HTTP Request/Response
+[Node.js + Express] <--> [MySQL Database] : SQL Queries
+
+@enduml

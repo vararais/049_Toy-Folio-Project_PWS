@@ -1,0 +1,39 @@
+@startuml
+left to right direction
+actor "User (Member)" as User
+actor "Admin" as Admin
+
+rectangle "ToyFolio System" {
+    usecase "Register Akun" as UC1
+    usecase "Login (Get Token)" as UC2
+    usecase "Lihat Dashboard & Kuota" as UC3
+    usecase "Beli Akses API (Simulasi)" as UC4
+    usecase "Test API (Playground)" as UC5
+    usecase "Copy API Key" as UC6
+    
+    usecase "Input Barang Baru" as UC7
+    usecase "Monitoring User" as UC8
+}
+
+User --> UC1
+User --> UC2
+User --> UC3
+User --> UC4
+User --> UC5
+User --> UC6
+
+Admin --> UC2
+Admin --> UC7
+Admin --> UC8
+
+note right of UC4
+  Mendapatkan x-api-key
+  dan kuota 1000 hits
+end note
+
+note right of UC7
+  Menambah data HotWheels
+  ke Katalog (Text Only)
+end note
+
+@enduml

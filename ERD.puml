@@ -1,0 +1,32 @@
+@startuml
+!theme plain
+hide circle
+
+entity "tbl_user" as user {
+    *user_id : INT <<PK>>
+    --
+    nama_lengkap : VARCHAR(100)
+    email : VARCHAR(100)
+    password : VARCHAR(255)
+    role : ENUM('admin', 'user')
+    api_key : VARCHAR(255)
+    credits : INT
+}
+
+entity "tbl_items" as items {
+    *item_id : INT <<PK>>
+    --
+    item_name : VARCHAR(100)
+    estimated_value : INT
+    production_year : INT
+    condition_grade : VARCHAR(50)
+    description : TEXT
+    image_path : VARCHAR(255)
+}
+
+note "User mengakses Items\nmenggunakan API Key\n(Logic Based Relation)" as N1
+
+user .. N1
+N1 .. items
+
+@enduml
