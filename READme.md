@@ -8,7 +8,7 @@ Login : <img width="1920" height="1080" alt="Screenshot 2026-01-11 205738" src="
 
 USER 
 
-Dashboard dan API key : <img width="1920" height="1080" alt="Screenshot 2026-01-11 205759" src="https://github.com/user-attachments/assets/35aa44cd-4899-4519-8d9b-0ba6547ad8a1" />
+Dashboard dan API key : <img width="1920" height="1080" alt="Screenshot 2026-01-11 213541" src="https://github.com/user-attachments/assets/b8ad90ac-5714-438d-bea5-d27dcc04f908" />
 
 
 API Tester : <img width="1920" height="1080" alt="Screenshot 2026-01-11 205834" src="https://github.com/user-attachments/assets/2609a646-655e-4d23-b7d1-05a063ebbeb7" />
@@ -25,3 +25,7 @@ Panel Admin : <img width="1920" height="1080" alt="Panel Admin" src="https://git
 
 
 Input Barang : <img width="1920" height="1080" alt="Screenshot 2026-01-11 205914" src="https://github.com/user-attachments/assets/8a6b26d5-082c-4811-8270-54b0d889383b" />
+
+HASIL PERCOBAAN API 
+
+<img width="1920" height="1080" alt="Screenshot 2026-01-11 213418" src="https://github.com/user-attachments/assets/451346b1-57d5-4129-8de8-caecc5962527" />
